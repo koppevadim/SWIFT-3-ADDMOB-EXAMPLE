@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BD2C20ACBDE97E6EDE9EB3A /* Pods_AddMob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1995880B2FB284EC8BC4E8D /* Pods_AddMob.framework */; };
 		BDE9D6661D86AC4D00D15FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE9D6651D86AC4D00D15FE7 /* AppDelegate.swift */; };
 		BDE9D6681D86AC4D00D15FE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE9D6671D86AC4D00D15FE7 /* ViewController.swift */; };
 		BDE9D66B1D86AC4D00D15FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE9D6691D86AC4D00D15FE7 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DF0E1670039627BD3A5AE9B /* Pods-AddMob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddMob.release.xcconfig"; path = "Pods/Target Support Files/Pods-AddMob/Pods-AddMob.release.xcconfig"; sourceTree = "<group>"; };
 		BDE9D6621D86AC4D00D15FE7 /* AddMob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddMob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE9D6651D86AC4D00D15FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDE9D6671D86AC4D00D15FE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		BDE9D66C1D86AC4D00D15FE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDE9D66F1D86AC4D00D15FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDE9D6711D86AC4D00D15FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1995880B2FB284EC8BC4E8D /* Pods_AddMob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AddMob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9FB6481DC3FFBE9E2FD7350 /* Pods-AddMob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddMob.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AddMob/Pods-AddMob.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BD2C20ACBDE97E6EDE9EB3A /* Pods_AddMob.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12E79BD5FA2F7D3A3A62904B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1995880B2FB284EC8BC4E8D /* Pods_AddMob.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5094E72D0006F3949A075D3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9FB6481DC3FFBE9E2FD7350 /* Pods-AddMob.debug.xcconfig */,
+				1DF0E1670039627BD3A5AE9B /* Pods-AddMob.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BDE9D6591D86AC4D00D15FE7 = {
 			isa = PBXGroup;
 			children = (
 				BDE9D6641D86AC4D00D15FE7 /* AddMob */,
 				BDE9D6631D86AC4D00D15FE7 /* Products */,
+				5094E72D0006F3949A075D3B /* Pods */,
+				12E79BD5FA2F7D3A3A62904B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDE9D6741D86AC4D00D15FE7 /* Build configuration list for PBXNativeTarget "AddMob" */;
 			buildPhases = (
+				3EDBE030123BFFE2AEEABA6B /* [CP] Check Pods Manifest.lock */,
 				BDE9D65E1D86AC4D00D15FE7 /* Sources */,
 				BDE9D65F1D86AC4D00D15FE7 /* Frameworks */,
 				BDE9D6601D86AC4D00D15FE7 /* Resources */,
+				D8EDEE7B263B7DB406C8AB45 /* [CP] Embed Pods Frameworks */,
+				8D0426A6BD30C5BEE903B31B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3EDBE030123BFFE2AEEABA6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D0426A6BD30C5BEE903B31B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AddMob/Pods-AddMob-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8EDEE7B263B7DB406C8AB45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AddMob/Pods-AddMob-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BDE9D65E1D86AC4D00D15FE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -182,6 +257,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -232,6 +308,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -259,6 +336,7 @@
 		};
 		BDE9D6751D86AC4D00D15FE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9FB6481DC3FFBE9E2FD7350 /* Pods-AddMob.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7JK729JZ89;
@@ -272,6 +350,7 @@
 		};
 		BDE9D6761D86AC4D00D15FE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DF0E1670039627BD3A5AE9B /* Pods-AddMob.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7JK729JZ89;
@@ -302,6 +381,7 @@
 				BDE9D6761D86AC4D00D15FE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
